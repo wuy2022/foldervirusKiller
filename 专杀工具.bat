@@ -1,4 +1,7 @@
-:wuyÉè¼Æ ²éÉ±¿âÏÖº¬11ÀàÌØÕ÷ ÍêÉÆ¹¦ÄÜ
+:Copyright 2022,2023 wuy2022
+:æœ¬ç¨‹åºæ˜¯è‡ªç”±è½¯ä»¶ï¼šä½ å¯ä»¥å†åˆ†å‘ä¹‹å’Œ/æˆ–ä¾ç…§ç”±è‡ªç”±è½¯ä»¶åŸºé‡‘ä¼šå‘å¸ƒçš„ GNU é€šç”¨å…¬å…±è®¸å¯è¯ä¿®æ”¹ä¹‹ï¼Œæ— è®ºæ˜¯ç‰ˆæœ¬ 3 è®¸å¯è¯ï¼Œè¿˜æ˜¯ï¼ˆæŒ‰ä½ çš„å†³å®šï¼‰ä»»ä½•ä»¥åç‰ˆéƒ½å¯ä»¥ã€‚
+:å‘å¸ƒè¯¥ç¨‹åºæ˜¯å¸Œæœ›å®ƒèƒ½æœ‰ç”¨ï¼Œä½†æ˜¯å¹¶æ— ä¿éšœ;ç”šè‡³è¿å¯é”€å”®å’Œç¬¦åˆæŸä¸ªç‰¹å®šçš„ç›®çš„éƒ½ä¸ä¿è¯ã€‚è¯·å‚çœ‹ GNU é€šç”¨å…¬å…±è®¸å¯è¯ï¼Œäº†è§£è¯¦æƒ…ã€‚
+:ä½ åº”è¯¥éšç¨‹åºè·å¾—ä¸€ä»½ GNU é€šç”¨å…¬å…±è®¸å¯è¯çš„å¤æœ¬ã€‚å¦‚æœæ²¡æœ‰ï¼Œè¯·çœ‹ <https://www.gnu.org/licenses/>
 %1 mshta vbscript:CreateObject("Shell.Application").ShellExecute("cmd.exe","/c %~s0 ::","","runas",1)(window.close)&&exit /b
 cd /d %~d0
 @echo off
@@ -12,8 +15,8 @@ set y=HKCR\CLSID\{20D04FE0-3AEA-1069-A2D8-08002B30309D}\shell
 set q=HKLM\SYSTEM\CurrentControlSet\Services\SharedAccess\Parameters\FirewallPolicy
 set for=for /f "usebackq delims=" %%i in
 
-set kex="AKUT.KENAPA-NAPA.FILE.C-NYA..KALO.MAU.BISA.AJA µ¹±¾.µÇ!..*ÏòÓ¢ĞÛÍõ.ÖÂÒâ!..*·´¶Ô°Ô.Ö÷Òå!..*ÊÀ½ç >852.992ldq<|>752.94538@QQ.COM<|>3317.9846@Q d!.Some.one.killed.ChineseHacker-2.Monit C:.windows.tsay.exe.....1...SOFTWARE.Microsoft.Windows.CurrentVersion.RunOn Worm.Kalem.Project1..KlampokVxer2008 Host: utenti.lycos.it.Connection: close"
-set kvb="te=WScript.exe...VirusName.....AutoRun....VBCRLF..shell.open=´ò <.TACILPPPPA.NOIOITACIL.=EMANNniFyoB"
+set kex="AKUT.KENAPA-NAPA.FILE.C-NYA..KALO.MAU.BISA.AJA å€’æœ¬.ç™»!..*å‘è‹±é›„ç‹.è‡´æ„!..*åå¯¹éœ¸.ä¸»ä¹‰!..*ä¸–ç•Œ >852.992ldq<|>752.94538@QQ.COM<|>3317.9846@Q d!.Some.one.killed.ChineseHacker-2.Monit C:.windows.tsay.exe.....1...SOFTWARE.Microsoft.Windows.CurrentVersion.RunOn Worm.Kalem.Project1..KlampokVxer2008 Host: utenti.lycos.it.Connection: close"
+set kvb="te=WScript.exe...VirusName.....AutoRun....VBCRLF..shell.open=æ‰“ <.TACILPPPPA.NOIOITACIL.=EMANNniFyoB"
 
 for /f "tokens=2,3,4,5,6" %%a in ('findstr "##r" %lg%') do set ex=%%a&set db=%%b&set/a vb=%%c&set lk=%%d&set m1=%%e
 echo %date% %time% v6.9>%lg%
@@ -26,7 +29,7 @@ attrib /s -s -h
 if %%~xi==.exe (set/a a+=1) else (if %%~xi==.db (set/a b+=1) else (if %%~xi==.vbs (set/a c+=1) else (if %%~xi==.vbe (set/a c+=1) else (if %%~xi==.lnk (set/a d+=1)))))
 if %a%.%m1% equ %ex%.0 goto a
 
-%ce% %time% Çå³ıexe²¡¶¾>>%lg%
+%ce% %time% æ¸…é™¤exeç—…æ¯’>>%lg%
 taskkill /f /t /im windows.exe
 %for% (`dir /b /s %~d0\*.exe`) do if 4500 lss %%~zi if %%~zi lss 2500000 (findstr /m %kex% "%%i")&&(set/a a-=1%tp%&taskkill /f /im "%%~nxi"&del /f /q "%%i"&echo %%i %%~ziB>>%lg%)
 
@@ -41,7 +44,7 @@ reg delete HKLM%sm%%wc%RunOnce /v msfsa /f
 
 :a
 if %b%.%m1% equ %db%.0 if %c% equ %vb% if %d% equ %lk% goto c
-%ce% %time% Çå³ı½Å±¾²¡¶¾>>%lg%
+%ce% %time% æ¸…é™¤è„šæœ¬ç—…æ¯’>>%lg%
 del /f /q "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*.lnk" "C:\Autorun.inf" "c:\*.vbs"
 
 %for% (`dir /b /s %~d0\thumb.db`) do if 8100 lss %%~zi if %%~zi lss 8900 set/a b-=1%tp%&set/a m+=1&del /f /q "%%~fna"&echo %%~fnxa %%~zaB>>%lg%
@@ -54,7 +57,7 @@ reg delete %y% /v open /f&reg delete %y% /v explore /f&reg add %y% /ve /d none /
 
 :b
 if %c%.%m1% equ %vb%.0 if %d% equ %lk% goto c
-%ce% %time% Çå³ımovanide²¡¶¾>>%lg%
+%ce% %time% æ¸…é™¤movanideç—…æ¯’>>%lg%
 taskkill /f /t /im AasdR.exe
 %for% (`dir /b %~d0\`) do move /y  "%%~nxi" "%~d0\%%~nxi"
 del /f /q "%~d0\*.lnk" "%userprofile%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup\*.lnk"
@@ -63,8 +66,8 @@ rd /s /q "%userprofile%\AppData\Roaming\WindowsServices"
 rd /q "%~d0\_"&rd /s /q "%~d0\WindowsServices"
 
 :c
-if %t% equ 0 echo ²éÎŞ²¡¶¾»î¶¯>>%lg%&&set m=0&set m1=0&&goto d
-%ce% %time% ×ÛºÏĞŞ¸´>>%lg%
+if %t% equ 0 echo æŸ¥æ— ç—…æ¯’æ´»åŠ¨>>%lg%&&set m=0&set m1=0&&goto d
+%ce% %time% ç»¼åˆä¿®å¤>>%lg%
 attrib /s /d -s -h
 del /f /s /q "%~d0\autorun.inf"
 reg add HKCU%sm%%wc%Policies\System /v DisableRegistryTools /t reg_dword /d 0 /f
@@ -81,16 +84,16 @@ if %t% equ 0 goto e
 if %%~xi==.exe (set/a a1+=1) else (if %%~xi==.db (set/a b1+=1) else (if %%~xi==.vbs (set/a c1+=1) else (if %%~xi==.vbe (set/a c1+=1) else (if %%~xi==.lnk (set/a d1+=1)))))
 if "%a1% %b1% %c1% %d1%" equ "%a% %b% %c% %d%" (goto f)
 set/a m+=1&set is2=1&set msg=1
-echo ·¢ÏÖÎÄ¼ş¶¯×÷£¬½øĞĞ¶ş´ÎÉ¨Ãè>>%lg%&&goto pre
+echo å‘ç°æ–‡ä»¶åŠ¨ä½œï¼Œè¿›è¡ŒäºŒæ¬¡æ‰«æ>>%lg%&&goto pre
 
 :e
-echo %time% ÒÔÏÂ³ÌĞòÓë¸¸Ä¿Â¼Í¬Ãû£¬¿ÉÄÜ±»²¡¶¾¸²Ğ´£¬Çë¾¡¿ì´¦Àí:>>%lg%
+echo %time% ä»¥ä¸‹ç¨‹åºä¸çˆ¶ç›®å½•åŒåï¼Œå¯èƒ½è¢«ç—…æ¯’è¦†å†™ï¼Œè¯·å°½å¿«å¤„ç†:>>%lg%
 %for% (`dir /b /s %~d0\* /a:d`) do if exist "%%i\%%~ni.exe" (echo %%i\%%~ni.exe>>%lg%&&set/a p+=1)
-if %p% equ 0 echo ÎŞ>>%lg%||set msg=1
+if %p% equ 0 echo æ— >>%lg%||set msg=1
 
 :f
-if %m% neq 0 echo ½¨ÒéÁ¢¿ÌÖØÆô»òÊ¹ÓÃ×¨ÒµÈí¼şÉ±¶¾!>>%lg%
-echo ##r %a% %b% %c% %d% %m% ´¦Àí%t%¸öÎÄ¼ş>>%lg%
-echo %time% Íê±Ï>>%lg%
-call %~dp0ÎÄ¼ş¹ÜÀí.bat c
-if defined %msg% mshta vbscript:msgbox("Çë¹Ø×¢²éÉ±ÈÕÖ¾!",,"×¨É±¹¤¾ß")(window.close)&start %lg%
+if %m% neq 0 echo å»ºè®®ç«‹åˆ»é‡å¯æˆ–ä½¿ç”¨ä¸“ä¸šè½¯ä»¶æ€æ¯’!>>%lg%
+echo ##r %a% %b% %c% %d% %m% å¤„ç†%t%ä¸ªæ–‡ä»¶>>%lg%
+echo %time% å®Œæ¯•>>%lg%
+call %~dp0æ–‡ä»¶ç®¡ç†.bat c
+if defined %msg% mshta vbscript:msgbox("è¯·å…³æ³¨æŸ¥æ€æ—¥å¿—!",,"ä¸“æ€å·¥å…·")(window.close)&start %lg%
